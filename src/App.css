@@ -1,39 +1,142 @@
-.App {
-  text-align: center;
+.app {
+  height: 100vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__wrapper {
+  width: 100%;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.app__sider {
+  padding: 0 30px;
+  color: white !important;
 }
 
-.App-header {
-  min-height: 100vh;
+.app__checkBoxes {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+}
+
+.app__check {
+  color: white !important;
+  margin: 10px 0 !important;
+}
+
+.app__searchButton {
+  margin-top: 10px;
+}
+
+.app__logo {
+  height: 70px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.app__header {
+  color: white !important;
+  font-size: 24px;
+}
+
+.app__content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.app__card {
+  margin: 10px !important;
+  flex-grow: 1;
+}
+
+.app__buyButton {
+  float: right;
+}
+
+.app__cartButton {
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
+  float: right;
+  margin-top: 15px;
+  position: relative !important;
+}
+
+.app__cartIcon {
+  font-size: 30px !important;
+}
+
+.app__itemCart {
+  position: absolute !important;
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 999px;
+  font-size: 10px;
+  top: 0;
+  right: 0;
+}
+
+.app__cart {
+  display: flex;
+
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  flex: 1;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.app__cartWrapper {
+  width: 75vw;
+  height: 100%;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+.app__item {
+  margin-top: 10px !important;
+}
+
+.app__item > .ant-card-body {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.app__itemInf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.app__itemName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.app__itemPrice {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.app__cartDelete {
+  border: 0 !important;
+  position: absolute !important;
+  top: 17px;
+  right: 30px;
+}
+
+.app__cartDeleteIcon {
+  font-size: 18px !important;
+  color: red !important;
+}
+
+.app__allPrice {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 0;
+  color: rgba(0, 21, 41, 1);
+}
+
+.map {
+  display: flex;
 }
